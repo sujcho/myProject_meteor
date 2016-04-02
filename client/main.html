@@ -1,8 +1,9 @@
+<template name ="Home">
 <head>
   <meta charset="UTF-8">
   <title>matlink_scratch</title>
 </head>
- 
+
 <body>
   <div class="container">
     <header>
@@ -17,14 +18,14 @@
     <div class="container-fluid">
       <h2>The platform for materials and project reach</h2>
       <a href="#">Learn More</a>
-      <div class="register">  
+      <div class="register">
         <p>If you're not a memeber,</p>
         <!-- trigger register modal-->
         <button type="button" class="btn btn-primary btn-lg outline" id="btn-register" data-toggle="modal" data-target="#registerModal">Register</button>
       </div>
       <div class="signin">
         <p>If you are a member,</p>
-        <a href="supplier.html" role="button" class="btn btn-primary btn-lg outline signin" id="btn-signin-suppliers"><span>Log In</span><span> Suppliers</span> </a>
+        <a href="#" role="button" class="btn btn-primary btn-lg outline signin" id="btn-signin-suppliers"><span>Log In</span><span> Suppliers</span> </a>
         <button type="button" class="btn btn-primary btn-lg outline signin" id="btn-signin-designers"><span>Log In</span><span> Designers</span> </button>
       </div>
     </div>
@@ -33,8 +34,7 @@
 
   <!--toggled when register button is clicked-->
   {{>registerModal}}
- 
+
   </div>
 </body>
- 
-
+</template>
