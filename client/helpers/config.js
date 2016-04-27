@@ -1,3 +1,4 @@
+/*
 AAccountsTemplates.configure({
     // Behavior
     confirmPassword: true,
@@ -51,3 +52,4 @@ AAccountsTemplates.configure({
       },
     },
 });
+*/
