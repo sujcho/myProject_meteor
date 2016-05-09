@@ -1,19 +1,48 @@
 <template name="productSubmit">
+  <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          ADD PRODUCT
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+              {{>submitForm}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<!--product submit form for modal body -->
+<template name="submitForm">
   <form class="submit-form">
     <div class="form-group">
-      <label class="control-label" for="url">URL</label>
+      <label class="control-label" for="name">Name</label>
       <div class="controls">
-          <input name="url" id="url" type="text" value="" placeholder="Your URL" class="form-control"/>
+          <input name="name" id="name" type="text" value="" placeholder="Product Name" class="form-control"/>
       </div>
     </div>
-
     <div class="form-group">
-      <label class="control-label" for="title">Title</label>
+      <label class="control-label" for="material">Material</label>
       <div class="controls">
-          <input name="title" id="title" type="text" value="" placeholder="Name your post" class="form-control"/>
+          <input name="material" id="material" type="text" value="" placeholder="Product Material" class="form-control"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="dimension">Dimension</label>
+      <div class="controls">
+          <input name="dimension" id="dimension" type="text" value="" placeholder="Product Dimension" class="form-control"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="color">Color</label>
+      <div class="controls">
+          <input name="color" id="color" type="text" value="" placeholder="Color" class="form-control"/>
       </div>
     </div>
 
-    <input type="submit" value="Submit" class="btn btn-primary"/>
+    <input type="submit" value="Save" class="btn btn-primary"/>
+    <button class="btn btn-danger">Clear</button>
   </form>
 </template>

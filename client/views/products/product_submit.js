@@ -5,10 +5,14 @@ Template.productSubmit.events({
   //  console.log(event);
 
     var product =  {
-      url:$(event.target).find('[name=url]').val(),
-      title:$(event.target).find('[name=title]').val()
+      name:$(event.target).find('[name=name]').val(),
+      material:$(event.target).find('[name=material]').val(),
+      dimension:$(event.target).find('[name=dimension]').val(),
+      color:$(event.target).find('[name=color]').val(),
     }
 
     product._id = Products.insert(product);
+
+    $('#submitModal').modal('hide');
   }
 });
